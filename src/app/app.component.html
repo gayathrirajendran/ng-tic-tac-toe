@@ -12,8 +12,8 @@
     <div *ngIf="!winner">Next player:  <strong>{{ nextPlayer }}</strong></div>
 </div>
 
-<div class="d-flex col-8 justify-content-center gap-4 container-fluid">
-    <div class="col-4">
+<div class="d-flex col-lg-8 col-xs-12 col-sm-12 col-md-12 justify-content-center gap-4 container-fluid">
+    <div class="col-xs-12 col-4">
         <div class="board row m-0">
             <button (click)="makeAMove(index)"
                 class="col-4 square d-flex justify-content-center align-items-center square"
@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-4 col-xs-12">
         History
         <div *ngFor="let item of history; let index = index">
             <button (click)="goToHistory(index)">
@@ -31,7 +31,7 @@
             </button>
         </div>
     </div>
-    
+
 </div>
 
 <router-outlet></router-outlet>
